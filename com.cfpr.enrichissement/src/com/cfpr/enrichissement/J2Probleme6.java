@@ -13,7 +13,7 @@ public class J2Probleme6 {
 	static double sommes;
 	
 	
-	//public static void main(String[] args) {
+	//public static void main(String[] ) {
 		//do(){
 			
 		//}
