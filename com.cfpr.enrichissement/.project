@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>com.cfpr.enrichissement</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/com/cfpr/enrichissement/Probleme5.java</name>
+			<type>1</type>
+			<location>C:/Users/a0493098/OneDrive - Centre de services scolaire des Affluents/a0493098/com.cfpr.enrichissement/src/com/cfpr/enrichissement/Probleme5.java</location>
+		</link>
+		<link>
+			<name>src/com/cfpr/enrichissement/Probleme6.java</name>
+			<type>1</type>
+			<location>C:/Users/a0493098/OneDrive - Centre de services scolaire des Affluents/a0493098/com.cfpr.enrichissement/src/com/cfpr/enrichissement/Probleme6.java</location>
+		</link>
+	</linkedResources>
+</projectDescription>
