@@ -3,33 +3,47 @@ package com.cfpr.enrichissement;
 import java.util.Scanner;
 
 public class TP1 {
+	
 	public static Scanner scanner = new Scanner(System.in);
-	public static int choix;
+	public static int choix;	
 	public static void main(String[] args) {
-       
-
-        System.out.println("TRAVAIL PRATIQUE #1 - Dominique Lafleur");
-        System.out.println("1. Calculateur de billets et pièces");
-        System.out.println("2. Jeu de devinette d'un nombre mystère");
-        System.out.println("0. Quitter");
-        System.out.print("Entrez 1, 2 ou 0 pour sélectionner l'option : ");
-        int choix = scanner.nextInt();
-
-        switch (choix) {
-            case 1:
-                calculateurBilletsPieces(scanner);
-                break;
-            case 2:
-                jeuDevinette(scanner);
-                break;
-            case 0:
-                System.out.println("Vous avez quitté le programme.");
-                break;
-            default:
-                System.out.println("Option invalide. Veuillez entrer 1 pour le calculateur, 2 pour le jeu, ou 0 pour quitter.");
-        }
+		afficherMenu();       
+        choix = choixJeu(scanner, choix);
     }
 
+	private static void afficherMenu() {
+		
+		 System.out.println("TRAVAIL PRATIQUE #1 - Dominique Lafleur");
+	        System.out.println("1. Calculateur de billets et pièces");
+	        System.out.println("2. Jeu de devinette d'un nombre mystère");
+	        System.out.println("0. Quitter");
+	        System.out.println("Entrez 1, 2 ou 0 pour sélectionner l'option : ");			
+		
+	}
+	
+	public static int choixJeu(Scanner scanner, int choix) {
+    	// Choix du jeu
+		 choix = scanner.nextInt();
+
+        switch (choix) {
+	        case 1:
+	            calculateurBilletsPieces(scanner);
+	            break;
+	        case 2:
+	            jeuDevinette(scanner);
+	            break;
+	        case 0:
+	            System.out.println("Vous avez quitté le programme.");
+	            break;
+	       
+	        default:
+	            System.out.println("Option invalide. Veuillez entrer 1 pour le calculateur, 2 pour le jeu, ou 0 pour quitter.");
+
+	     }
+        scanner.close();
+		return choix;
+    }
+	
     public static void calculateurBilletsPieces(Scanner scanner) {
     	// Calculateur de billets et pièces
         System.out.println("\nMaintenant, passons au calculateur de billets et pièces.");
