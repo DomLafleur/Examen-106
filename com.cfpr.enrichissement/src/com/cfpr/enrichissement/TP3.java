@@ -69,21 +69,24 @@ public class TP3 {
         if (butsVisiteuse > butsLocale) {
             Stats[equipeVisiteuseIndex][1]++;
             Stats[equipeLocaleIndex][2]++; 
+           
             Stats[equipeVisiteuseIndex][0]++;
     		Stats[equipeLocaleIndex][0]++;
         } else if (butsVisiteuse < butsLocale) {
             Stats[equipeVisiteuseIndex][2]++;
             Stats[equipeLocaleIndex][1]++; 
+           
             Stats[equipeVisiteuseIndex][0]++;
     		Stats[equipeLocaleIndex][0]++;
         } else if(butsVisiteuse == butsLocale) {
             Stats[equipeVisiteuseIndex][3]++;
             Stats[equipeLocaleIndex][3]++;
+           
             Stats[equipeVisiteuseIndex][0]++;
     		Stats[equipeLocaleIndex][0]++;
         }
-        Stats[equipeVisiteuseIndex][4] = Stats[equipeVisiteuseIndex][1] * 3 + Stats[equipeVisiteuseIndex][3];
-        Stats[equipeLocaleIndex][4] = Stats[equipeLocaleIndex][1] * 3 + Stats[equipeLocaleIndex][3];
+        Stats[equipeVisiteuseIndex][4] = (Stats[equipeVisiteuseIndex][1] * 3) + Stats[equipeVisiteuseIndex][3];
+        Stats[equipeLocaleIndex][4] = (Stats[equipeLocaleIndex][1] * 3) + Stats[equipeLocaleIndex][3];
 		}
 	
 	public static int getIndexEquipe(String equipe) {
@@ -103,17 +106,17 @@ public class TP3 {
 	}
 	
 	public static void afficherClassement(int[][] Stats) {
-        System.out.print("TRAVAIL PRATIQUE #3 - Dominique Lafleur\n------------------------------\n\nRésultat\n---------\nÉquipe visiteuse: "
+        System.out.print("TRAVAIL PRATIQUE #3 - Dominique Lafleur\n------------------------------\n\nResultat\n---------\nEquipe visiteuse: "
 	+ equipeVisiteuse + "\nNombre de buts : "
-    + butsVisiteuse + "\nÉquipe locale : "
+    + butsVisiteuse + "\nEquipe locale : "
 	+ equipeLocale + "\nNombre de buts : "
     + butsLocale + "\n\n\nClassement"
-    + "\n\nÉquipe                 PJ  V  D  N  PTS\n-------------------------------------------"
+    + "\n\nEquipe                 PJ  V  D  N  PTS\n-------------------------------------------"
     +"\nJunior Montreal         "
     + Stats[0][0] + "  " + Stats[0][1] + "  " + Stats[0][2] + "  " + Stats[0][3] + "  " + Stats[0][4]
     +"\nRemparts Quebec         "
     + Stats[1][0] + "  " + Stats[1][1] + "  " + Stats[1][2] + "  " + Stats[1][3] + "  " + Stats[1][4]
-    +"\nÉperviers Terrebonne    "
+    +"\nEperviers Terrebonne    "
     + Stats[2][0] + "  " + Stats[2][1] + "  " + Stats[2][2] + "  " + Stats[2][3] + "  " + Stats[2][4]
     +"\nAigles Laval            "
     + Stats[3][0] + "  " + Stats[3][1] + "  " + Stats[3][2] + "  " + Stats[3][3] + "  " + Stats[3][4]);
