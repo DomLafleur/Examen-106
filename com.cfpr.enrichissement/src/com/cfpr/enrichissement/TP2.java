@@ -198,7 +198,6 @@ public class TP2 {
 		System.out.println("Choisir le premier nombre:");
 		nombre1 = scanner.nextInt();
 		
-		
 		resultat = (int) Math.log(nombre1);
 		System.out.println(nombre1 + "Log" +  "=" + resultat);
 		

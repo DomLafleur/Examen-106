@@ -123,5 +123,11 @@ public class TP3 {
  
 	}
 	
+	public static void calculCube(int []tab1,int []tab2) {
+		for(int resultat = 0; resultat < 10; resultat++) {
+			tab1[resultat] = (int) (Math.pow(tab2[resultat], 3));
+		}
+
+	}
  
    }
